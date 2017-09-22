@@ -6,7 +6,7 @@
           <p>
             <span tal:replace="message"></span>
           </p>
-          <form role="form" action="${request.route_url('login')}" method="POST">
+          <form role="form" action="${view.request.route_url('login')}" method="POST">
               <input type="hidden" name="came_from" value="${came_from}">
               <div class="form-group">
                   <label for="username">Username</label>
